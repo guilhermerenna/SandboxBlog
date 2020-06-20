@@ -1,5 +1,10 @@
 {% extends 'main/base.html' %}
 
+{% block title%}
+Create Post
+{% endblock %}
+
 {% block content %}
 <p>Esta é a página de criação de post</p>
+<a class="btn btn-primary" href="{% url 'list_posts' %}">List posts</a>
 {% endblock %}
